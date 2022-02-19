@@ -1,9 +1,7 @@
-### Gude Srikanth
-
-sgcnm@umsystem.edu
-
 ### Nelluri Gopi
+gng75@umsystem.edu
 
-email address: gng75@umsystem.edu
+### Gude Srikanth
+Email Address: sgcnm@umsystem.edu
 
-GitHub Link: https://github.com/gopinelluri9/demo_remote_repository/tree/main/WebPart/ICP5
+GitHub Link: https://github.com/gudesrikanth/webcourse/tree/main/Webpart/ICP5
