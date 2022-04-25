@@ -9,4 +9,4 @@ Git Hub Link - https://github.com/gudesrikanth/webcourse/tree/main/MobilePart
 Video Link – https://www.youtube.com/watch?v=KnxuEEEs408
 
 Presentation Github Link -
-https://github.com/gopinelluri9/demo_remote_repository/tree/main/MobilePart/ICP%20Presentat ion%20Two
+https://github.com/gopinelluri9/demo_remote_repository/tree/main/MobilePart/ICP%20Presentation%20Two
