@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap'");
+
+.lineELement {
+  float: left;
+  height: 500px;
+  overflow: auto;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+  width: 90%;
+}
+
+.itemImage {
+  height: 200px;
+  width: 200px;
+  border: 1px;
+  margin: 5px;
+  float: left;
+  vertical-align: top;
+}

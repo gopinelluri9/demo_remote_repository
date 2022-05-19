@@ -1,0 +1,32 @@
+
+.watchListHeader{
+  text-align: center;
+}
+
+.columnbtn{
+  width:200px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 10px;
+  margin: auto;
+  width: 100%;
+}
+tr{
+  text-align: left;
+  display: table-row;
+}
+thead{
+  background: #57BEFF;
+}
+th{
+  padding-left: 3px;
+  width:150px;
+  height:50px;
+}
+tr{
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}

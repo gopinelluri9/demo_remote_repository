@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap'");
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35rem;
+    color: #999;
+    background-color: #000;
+    position: relative;
+}
+@media only screen and (min-width: 500px) {
+    .hero {
+        height: 50rem;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 900px)  {
+    .hero {
+        position: relative;
+        display: block;
+        height: 0;
+        padding-bottom: 40%;
+    }
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-width: 500px) {
+    .slider {
+        position: relative !important;
+    }
+}
+
+
+.backdrop {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+@media only screen and (min-width: 900px) {
+    .backdrop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 71.1%;
+        height: 100%;
+    }
+}
+backdrop:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.1) 100%
+    );
+}
+
+@media only screen and (min-width: 900px) {
+    .backdrop{
+    background-image: linear-gradient(
+    to right,
+    #000 0,
+    transparent 50%,
+    transparent 100%
+);
+}
+}
+
+> div {
+    width: 100%;
+}
+@media only screen and (min-width: 900px) {
+    >div{
+    display: inline;
+}
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    background: none;
+    transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 900px) {
+    .play{
+    display: none;
+}
+}
+
+.image {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    }
+@media only screen and (min-width: 900px) {
+    .image{
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+.pane {
+    padding: 0 1.5rem 1.5rem;
+}
+@media only screen and (min-width: 500px) {
+    .pane{
+    padding: 0 4rem 4rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .pane {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        width: 55%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .pane {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .pane{
+    width: 45%;
+}
+}
+
+.name {
+    margin: 0 0 1.4rem;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: #fff;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+@media only screen and (min-width: 500px) {
+    .name {
+        margin-bottom: 1.8rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .name {
+        font-size: 2.4vw;
+    }
+}
+name:focus {
+     outline: none;
+ }
+
+.meta {
+    font-size: 1.4rem;
+}
+@media only screen and (min-width: 500px) {
+    .meta {
+        display: flex;
+    }
+}
+
+@media (min-width: 1650px) {
+    .meta{
+    font-size: 0.9vw;
+}
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+@media only screen and (min-width: 500px) {
+    .rating{
+    margin: 0 1.2rem 0 0;
+}
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+span {
+    margin-right: 0.4rem;
+}
+span:not(:last-child):after {
+     content: "|";
+     margin-right: 9px;
+     margin-left: 9px;
+ }
+
+.desc {
+    display: block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    color: #BE5869;
+    font-family: 'Nunito Sans', sans-serif;;
+}
+@media only screen and (min-width: 500px) {
+    .desc {
+        display: none;
+    }
+}
+
+@media (min-width: 1650px) {
+    .desc{
+    font-size: 0.9vw;
+}
+}
+
+.trailer {
+    margin-top: 3rem;
+}
+
+@media only screen and (min-width: 900px) {
+    .trailer {
+        display: none;
+    }
+}
+
+@media (min-width: 1650px) {
+    .trailer{
+    font-size: 0.9vw;
+}
+}
+
+.rate {
+    font-size: 12px;
+}
+
+i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.material-icons {
+    color: #BE5869;
+}
+
+span {
+    color: #BE5869;
+    font-size: 16px;
+    font-weight: 400;
+}
+}

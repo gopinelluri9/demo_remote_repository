@@ -1,0 +1,46 @@
+.container{
+   width:400px;
+   background:#768A95;
+   padding-bottom:50px;
+   padding-top:30px;
+   border-radius:2%;
+ }
+.heading{
+  background:#0d6efd;
+  /*background:gray;*/
+  color:white;
+  padding:15px;
+  margin:0 25px 35px 25px;
+  border-radius:2%;
+  background:linear-gradient(#1D4350,#A43931,#BE5869);
+}
+.heading h1
+{
+  padding:0;
+  margin:0;
+  color:#ffffff
+}
+.submit
+{
+  border:2px #0d6efd;
+  color:#0d6efd;
+  background:white;
+  border-radius:50px;
+  font-weight:600;
+}
+.submit:hover{
+  background:#0d6efd;
+  color:white;
+  background:linear-gradient(#1D4350,#A43931,#BE5869);
+  border-color:transparent;
+}
+.btn{
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px;
+
+}
+
+.register{
+  color: white;
+}

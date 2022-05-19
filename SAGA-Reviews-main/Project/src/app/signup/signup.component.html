@@ -1,0 +1,60 @@
+<div class="row" style="height:100%; margin:0px; padding-top:32px">
+    <div class="col s12 m12 l12">
+        <div class="container center-align">
+            <div  style="display: inline-block; padding: 0px 20px 0px 20px;">
+                <h1 class="register">Signup Here!</h1>
+                <form class="col s12" [formGroup]="signupForm">
+                    <div class="row" style="padding-top:0px; padding-bottom:0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input type = "text" class = "form-control" formControlName="name" id = "name" placeholder = "User Name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" style="padding-top:0px; padding-bottom:0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input type = "email" class = "form-control" formControlName="email" id = "email" placeholder = "Email Address">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row" style="padding-top:0px; padding-bottom:0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input type = "password" class = "form-control" formControlName="pass" id = "password" placeholder = "Password">
+                        </div>
+                    </div>
+                    <br>
+                    <!-- re pass-->
+                    <div class="row" style="padding-top:0px; padding-bottom:0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input type = "password" class = "form-control" formControlName="repass" id = "re-password" placeholder = "Re-enter Password">
+                        </div>
+                    </div>
+                    <br>
+                    <!--mobile no-->
+                    <div class="row" style="padding-top:0px; padding-bottom:0px;">
+                        <div class="input-field col s10 offset-s1">
+                            <input type = "tel" class = "form-control" formControlName="mobile" id = "telephone" placeholder = "Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding-top:0px; padding-bottom:0px;">
+                        <div class="input-field col s5 offset-s1">
+                            Date Of Birth :<br>
+                            <input id="date" type="date" class=" form-control" formControlName="date">
+                        </div>
+
+                        <div class="col s5 offset-s1">
+                            Gender :<br>
+                            <input type="radio" value="Female" id="female" formControlName="gender"><label for="female">female</label>
+                            <input type="radio" value="Male" id="male" formControlName="gender"><label for="male">male</label>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col s5 offset-s1">
+                        <a class="waves-effect waves-light btn width-full" (click)="userentry()">Signup</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

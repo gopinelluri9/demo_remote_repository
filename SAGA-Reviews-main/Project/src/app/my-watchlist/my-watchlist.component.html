@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    </head>
+    <body>
+        <div>
+            <h2 class='watchListHeader'>Watch List: All your favourite Movies/TV Shows at one place</h2>
+            <div *ngFor="let watchList of userWatchList">
+                <h2 *ngIf="watchList.user_id == this._data.id">&nbsp;&nbsp;<i class='fa fa-film'>&nbsp;{{watchList.title}}</i></h2>
+            </div>
+        </div>
+    </body>
+</html>

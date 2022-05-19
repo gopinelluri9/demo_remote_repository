@@ -1,0 +1,19 @@
+.container{
+  width:400px;
+  background:#768A95;
+  padding-bottom:50px;
+  padding-top:30px;
+  border-radius:2%;
+}
+.btn{
+  margin-top: 8px;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 10px;
+}
+.form-group{
+  width: 600px;
+}
+.register{
+  color: white;
+}

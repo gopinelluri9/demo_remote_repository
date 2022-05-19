@@ -1,0 +1,35 @@
+<div class="row" style="height:100%; margin:0px; padding-top:32px;">
+  <div class="col s12 m12 l12">
+    <div class="container center-align">
+      <div  style="display: inline-block; padding: 0px 20px 0px 20px;">
+        <form class="col s12" method="post" [formGroup]="loginForm">
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input type = "email" class = "form-control" formControlName="email" id = "email" placeholder = "Enter Email">
+            </div>
+          </div>
+          <br>
+          <div class='row'>
+            <div class='input-field col s12'>
+              <input type = "password" class = "form-control" formControlName="pass" id = "pwd" placeholder = "Enter password">
+            </div>
+
+          </div>
+          <br>
+          <div class='row'>
+            <a [routerLink]="['/home']" routerLinkActive="router-link-active">
+              <button type='submit' name='btn_login' class='col s12 m12 btn btn-large waves-effect indigo hov' (click)="result()">Login</button>
+            </a>
+          </div>
+          <br>
+          <div class='row center-align'>
+            <h3><a class="register" [routerLink]="['/signup']" routerLinkActive="router-link-active">
+              <button class='col s12 m12 btn btn-large' style="background-color: #BE5869">Create new account</button>
+            </a></h3>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
