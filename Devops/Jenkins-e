@@ -1,0 +1,23 @@
+pipeline {
+      agent any
+      
+      stages{
+            stage("GIT checkout"){
+            steps{
+                  git credentialsId: 'e7bca83f-c29a-482c-91b4-e038c2277210', url: 'https://github.com/RAJANI9/boxfuse-sample-java-war-hello/'
+                  }
+            }
+            stage("build"){
+                  steps{
+                       sh "mvn clean package"
+                       sh "mv target/*.war target/myweb.war"
+                       }
+                       
+             }
+             stage("depoly"){
+                  steps{
+                       deploy adapters: [tomcat9(credentialsId: 'f7a2c7a4-9c67-49c4-8d5e-2c775e33c9c9', path: '', url: 'http://65.0.125.40:8080/')], contextPath: 'myweb', war: 'target/*.war'
+                       }
+            }
+       }
+  }     
